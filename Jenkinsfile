@@ -37,7 +37,7 @@ pipeline {
         stage('reporting') {
             agent { label 'mvn3.8.5' }
             steps {
-                junit testResults: '**/coverage/*.xml'
+                junit testResults: '*/coverage/*.xml'
             }
         }
     }
