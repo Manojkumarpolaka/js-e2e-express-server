@@ -1,4 +1,4 @@
-const scanner = require('sonarqube-scanner');
+const sonarqubeScanner = require('sonarqube-scanner');
 
 sonarqubeScanner(
   {
@@ -12,7 +12,7 @@ sonarqubeScanner(
       'sonar.tests': 'specs',
       'sonar.language' : 'js'
       'sonar.projectVersion': '1.0'
-    }
+    },
   },
   () => process.exit()
 );
