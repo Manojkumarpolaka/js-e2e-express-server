@@ -1,15 +1,18 @@
 const scanner = require('sonarqube-scanner');
 
-scanner(
+sonarqubeScanner(
   {
-    serverUrl : 'https://sonarqube.mycompany.com',
-    token : "019d1e2e04eefdcd0caee1468f39a45e69d33d3f",
+    serverUrl : 'http://172.31.34.125:9000/',
     options: {
       'sonar.projectName': 'My App',
       'sonar.projectDescription': 'Description for "My App" project...',
-      'sonar.sources': 'dist',
-      'sonar.tests': 'specs'
+      'sonar.sources': '.',
+      'sonar.login': 'admin',
+      'sonar.password': 'Testuser@123'
+      'sonar.tests': 'specs',
+      'sonar.language' : 'js'
+      'sonar.projectVersion': '1.0'
     }
   },
   () => process.exit()
-)
+);
