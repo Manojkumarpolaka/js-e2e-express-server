@@ -5,6 +5,7 @@ pipeline {
     }
     stages {
         stage('CleanWorkspace') {
+            agent { label 'mvn3.8.5' }
             steps {
                 cleanWs()
             }
