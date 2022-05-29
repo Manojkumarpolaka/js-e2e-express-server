@@ -36,6 +36,7 @@
     "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
     "supertest": "^6.1.1"
+    "sonarqube-scanner": "^2.7.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
