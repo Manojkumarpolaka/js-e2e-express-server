@@ -16,7 +16,7 @@ pipeline {
                 withSonarQubeEnv(installationName: 'SONAR', envOnly: true, credentialsId: 'SONAR') {
                     sh 'npm install'
                     sh 'npm run build'
-                    sh 'npm run sonar'
+                    sh 'npm test'
                 }
             }
         }
