@@ -3,7 +3,12 @@ pipeline {
     triggers {
         cron('0 * * * *')
     }
-    stages { 
+    stages {
+        stage('CleanWorkspace') {
+            steps {
+                cleanWs()
+            }
+        }
         stage('SCM Checkout') {
             agent { label 'master' }
             steps{
