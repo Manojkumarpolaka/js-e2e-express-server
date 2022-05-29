@@ -8,9 +8,9 @@ sonarqubeScanner(
       'sonar.projectDescription': 'Description for "My App" project...',
       'sonar.sources': '.',
       'sonar.login': 'admin',
-      'sonar.password': 'Testuser@123'
+      'sonar.password': 'Testuser@123',
       //'sonar.tests': 'specs',
-      'sonar.language' : 'js'
+      'sonar.language' : 'js',
       'sonar.projectVersion': '1.0'
     },
   },
